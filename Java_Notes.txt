@@ -1,0 +1,727 @@
+URL:- https://github.com/login
+Email:- sandeepmdhotre@gmail.com
+Password:- Director&2
+Username:- SandeepDhotre
+https://www.codegrepper.com/code-examples/whatever/ternary+operator+with+multiple+conditions+java
+https://www.programiz.com/java-programming/examples
+https://www.youtube.com/playlist?list=PLsyeobzWxl7oRKwDi7wjrANsbhTX0IK0J
+https://www.javatpoint.com/
+https://flycoolman.com/coding/java/java-collection/
+Editplus is a better version than notepad++ which we can use to code.
+Garbage collector is responsible only for heap area.
+
+Java is used to build enterprise application, web application and android/mobile application.
+If you do not want to retrun anything we can use void. Compiler will convert the source file or code into byte code.
+JVM will take byte code as input to convert it into native machine level code.
+Java Runtime Environment (JRE) is an implementation of the JVM.
+In Java main method is the 1st statement which will gets executed. Below are the ways to define a main method:-
+1) public static void main(String[] args) (Default)
+2) public static void main(String args[])
+3) public static void main(String[] arguments)
+4) static public void main(String[] args)
+5) public static void main(String[] sandeepdhotre)
+6) public static void main(String... args)
+ 
+For a single statement we do not required {} brackets.
+We can use this to exit from the code system.exit(0); After this no code will gets execute.
+Note: In Java, each code statement must end with a semicolon.
+When we compile a java program then it will create class file for all the class which are declared inside the java program.
+In Java there are total 53 keywords and 3 literals(true,false,null)
+ctrl+shit+o (To import the package)
+Default Java Programms are stored in path:- C:\Users\sandeep.dhotre02\workspace\JavaProgrammes\src
+A) Code Structure in Java
+	1) Put a class in a source file.
+	2) Put methods in a class.
+	3) Put statements in a method.
+
+There are three places in java where you can perform operations: 
+1.method
+2.constructor
+3.block :- Normal/Static/try/catch/finally
+
+A) Class
+Collection of objects is called class. It is a logical entity. It is just a template or a blueprint.
+In Java, every application begins with a class name, and that class must match the filename. 
+If you want to access a class outside the package then make sure that the class will be public.
+The name of the java file must match the class name. 
+When saving the file, save it using the class name and add ".java" to the end of the filename.
+Every java application must have at least one class definition that consists of class keyword followed by class name.
+Class will load only once. First character of the each word in class should be capital.
+The body of the class must go within a pair of curly braces.
+If we do not declare any access modifier then it will be a default class that means it will be only accessible from that package.
+Every class in java by default extends object class.
+Class and Interface cannot be declared as private.
+Class do not occupy any memory.
+Inside a class we can have below:-
+1) one or more variables/fields 
+2) one or more methods (default static or static parameterized or default non static or not static parameterized)
+3) one or more class(inner class/nested class)
+4) one or more constructors (Default and parameterized)
+5) one or more static blocks
+6) one or more normal blocks
+7) A class can implements multiple interfaces.
+8) We can not extend multiple classes with a single class. At a time we can extend only one class with a class.
+
+Inner Class:- Class inside a class is called as inner class.
+In order to use inner class itself we have to use outer class and to use the object of inner class we need to use the object of inner class. 
+Inner class will have 3 types:-
+1) Member class
+2) Static class
+3) Anonymous class
+We can implement methods for class and interfaces.
+We can use anonymous class for method overriding as well.
+We can not create object of anonymous class.
+Example:- Outer.Inner obj1 = obj.new Inner();
+
+B) Methods:-
+A Java method is a collection of statements that are grouped together to perform an operation. Any code inside the main() method will be executed. 
+Methods can be either declared or can be defined.
+Methods must be declared inside a class but within the curly braces of the class.
+A method is kind of like a function or procedure which can perform some operations which we can use multiple times or as per the requirement.
+A method will be call by using object or to call a static method, write the method's name followed by two parentheses () and a semicolon;
+Static method can be accessed without creating an object of the class, unlike public, which can only be accessed by objects. E.g. Myclass.myMethod();
+Two or more methods can have same name inside the same class if they accept different arguments.
+We can declare same method with same name in two different class.
+If you dont want others to use a method then you can declare the method as private.
+We can access a non static method without creating an object.
+Static methods belongs to class and not with object.
+Static methods do not work with instance variables.
+Static methods can call only to static methods and static data only.
+We can not use this or super keyword with static methods.
+Memory will be allocation in stack area for all the methods and it is a temporary only for the execution of that method.
+Different ways to create a static method:-
+1) new MyClass().myMethod();
+2) myStaticMethod(); [If this static method is declared in class where main method is declared.]
+3) MyClass.myStaticMethod();
+4) MyInterface.myStaticMethod();
+
+Method Overloading:- Multiple methods with the same name will be call as method overloading. 
+If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+It means that we can have multiple methods in a single class with same name but with different parameters. 
+We can not have same methods with same parameters.
+There are two ways to overload the method in java:-
+1.By changing number of arguments
+2.By changing the data type
+
+Method Overriding:- When a method with the same name has been declared in two different class and one class extends another class then 
+it will override method with the class which it extends. A static method cannot be overridden.
+
+C) Variable Syntax:- data_type variable_name = value;
+Variables must have a datatype. 
+Value of the variable can be vary or static as well. 
+We can declare a value of a variable by creating an object and through object we can assign a value to that variable. 
+To access variables outside the packages make the variables as public. 
+We can use only $ and _ special characters in variable.
+Variable name should not start with numbers but in between or at the end of a variable name we can use numbers.
+We can assign value to a class variable from an method as well by returning a value and by paramererized method and constructor as well with this keyword.
+E.g.:- int b=m1();
+Final Variables:- If you don't want others (or yourself) to overwrite existing values, 
+use the final keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only)
+Example:- final int myNum = 15;
+You can also assign the same value to multiple variables in one line:- int x, y, z; x = y = z = 50;
+Reference variable will store the address.
+
+There are three types of variables in Java.
+
+1) Local variable 
+Local Variables are a variable that are declared inside the body of a method or constructor or inside blocks and we can not use this variable into another method of a same class. 
+A local variable cannot be defined with "static" keyword but we can use the "final" keyword.
+Local variables are only limited inside method or constructor or inside blocks. 
+Local variables always stored in stack memory.
+Local variables destroyes its memory once they exit from the method, constructor or block.
+It does not have any defaults values and we have to initialize value of a local variable at the time of declaration. 
+We can not use access specifiers with local variables.
+
+2) Static (or class) variable 
+Static variables are initialized only once, at the start of the program execution. 
+These variables should be initialized first, before the initialization of any instance variables. 
+Static variables shares their memory with the all the objects.
+Static variables can be declared within a class but outside method or constructor or inside blocks.
+Static variables can be used in any methods, constructor or blocks declared within the class including static.
+When we ran a program and class file is loaded then variables allocated memory and when class file gets unloaded then variable memory gets destroyed.
+Static variables are stored in non heap memory or in static memory.
+They have the defaults values. int have default value zero, boolean have the default value false and object have the default value as null.
+We can use access specifiers with static variables.
+
+3) Instance variable
+Instance variables are defined without the static keyword. They are defined Outside a method declaration. They are Object specific and are known as instance variables. 
+Instance variable are declared inside the class but outside method, constructor or blocks.
+Instance variables can be used in any methods, constructor or blocks declared within the class.
+When object gets created then it allocates memory and when object gets deleted or destroyed then it releases memory and these variables are stored in heap memory.
+They have the defaults values. int have default value zero, boolean have the default value false and object have the default value as null.
+We can use access specifiers with Instance variables.
+To access instance variables through a static method we need to create an object of that class and with the help of object we can use instance variables inside a static method. For the normal methods we can use or call normally.
+
+Private variables which are declared in a class only can be accessed in a class and we can initalize a value at the time of declaring a variable.
+Also we can create an parameterized constructor and from other class we create an object of this constructor and we can assign a value to the private instance variable.
+You can not access private variables outside the class with objects.
+But we can access private instance variables through a method and we can access this method in another class within same package.
+We cannot change and access local variables outside the method.
+In Java, we have eight primitive data types: boolean, char, byte, short, int, long, float and double. For every primitive data type we have a class.
+Non primitive data types are string, array, union, class, structure.
+For primitive data types size is fixed but for non primitive data types size is not fixed.
+
+Access modifiers controls the access level. 
+For classes, you can use either public,default,abstract or final. Non-access Modifiers - final, abstract, strictfp.
+In java we have four access modifiers. For attributes, methods and constructors, you can use the one of the following access modifiers:
+ 1. default :- By default the default is the access. Specific Package.
+ 2. private:- The code is only accessible within the declared class. Specific Class.
+ 3. protected:- The code is accessible in the same package and subclasses. Subsiding package.
+ 4. public:- The class is accessible by any other class and the code is accessible for all classes. Any class or package.
+
+A variable in a class are set as "private". It can only be accessed with the methods defined in the class. No other class or object can access them.
+
+D) Interface:-
+The variables declared in an interface are public, static & final by default.
+We can declare an interface and if we want to use this interface with class we need to use implements keyword.
+We cannot instantiate an interface. Whenever we want to instanciate an interface we need to create a class and that class impletments the interface.
+We can not create object of an interface but we can only create reference of a interface. 
+
+We can implement multiple interfaces in a single class and also a single interface can be implement with multiple class.
+An interface can not extend a class.
+An interface can have methods and variables just like the class but the methods declared in interface are by default abstract. 
+If you create any method in interface then by default these methods are public abstract.
+Interfaces are declared by specifying a keyword “interface”. E.g.: interface MyInterface {}
+An interface cannot implements another Interface but interface can extends multiple interfaces and it supports multiple inheritance.
+A class cannot implement two interfaces that have methods with same name but different return type.
+We can use no method declaration Interface to restrict user for using methods which are declared in a class.
+We can create an object of an interface by creating an anonymous class and with this object we can call a method.
+We can define an method with Lambda expression and also we can can create an object to call a method.
+After Java 1.8 version we can define or implement method in interface with the use of default keyword.
+Static method which are declared and defined inside interface then we do not required an object to call a static method. We can simply call static method using interface name. E.g. TestI.show();
+If there is same method which is defined in interface and in class and if another class extends this class and implements this interface then 
+when you are calling to this method it will call method of a class and it will not call method of interface as class has more power than interface and 
+class method will always have high priority. This is called as third rule in java.
+Different ways to call methods which are declared in interface:-
+1) new TestClass().show(); [TestMethod is a class and show is a method of interface and it will work only when this class implements interface]
+2) I3.show(); [I3 is a interface and show is a static method of this interface and this will only work for static method only]
+3) TM.show(); [TM is the object of a class and show is the method of interface]
+
+We have three types of interfaces:-
+1) Marker Interface --> without any methods. We can use this interface to give a permission to a method to call.
+2) Single Abstract Method --> In which we have only method. It is also called as Functional Interface.
+3) Normal
+We can implement N number of interfaces with a class. (Java does not support multiple inheritance.) In interface we can not define any method but we can declare the method. In order to implement a interface in a class we need to define all the abstract methods which are declared in interface.
+
+Functional Interface:-
+An Interface that contains exactly one abstract method is known as functional interface. It can have any number of default, static methods but can contain only one abstract method. It can also declare methods of object class.
+Functional Interface is also known as Single Abstract Method Interfaces or SAM Interfaces.
+A functional interface can extends another interface only when it does not have any abstract method. It means functional interface can extend to a non-functional interface.
+
+E) Abstract:-
+If a class is using an abstract method they must be declared abstract. 
+When you only declared any method in java those methods directly become abstract.
+If a regular class extends an abstract class, then that class must implement or must define all the abstract methods of the abstract parent class and it is compulsory. 
+You can not extend a class which is having abstract methods without defining that method inside sub-class.
+An abstract class can have both abstract and non-abstract methods. 
+We can have abstract methods inside only abstract classes.
+We can not create an object of abstract class but we can create an object of a class which extends the abstract. 
+Abstract Method are those methods which are declared but not defined.
+When you have an abstract method in your class then that class becomes an abstract class.
+Abstract class have constructors and constructor chaining is also possible.
+
+F) Object:-
+The object of a class can be created by using the new keyword also called as Instantiation. All object references are initialized to null in Java. Every time, an object is created using the new keyword, the default constructor of the class is called. Object loads only after class loads. In Java, an object is created from a class.
+To create an object of MyClass, specify the class name, followed by the object name, and use the keyword new. Object can not be created before the main method execution. 
+Object is a parent or base class for any class in java. In other words, it is the topmost class of java.
+We can create multiple objects of one class. Default value for object will be 0 for (byte,short,int,long) and for string it will be null and for boolean it will be false and for float/double it is 0.0
+Objects occupies memory. All objects gets memory in Heap memory area and all the reference objects belongs to stack memory.
+If you create a same object with multiple times with the new keyword then it will get new memory inside heap.
+Object knows variables and object does methods.
+If you put value for any object to null then it will destroy this object it from memory. For E.g. obj = null;
+You can also create an object of a class and access it in another class. Once you create an object of a class you can call all the methods inside that class and assign values to the variables declared in that class. So in short object is used to call the methods. If we are using a parameterized methods then we can pass the parameter value while calling that method with the object.
+We can create reference of an interface and we can create object of a class. For E.g. Collection values = new ArrayList();
+We can assign value of one object to another object. For E.g. obj1 = obj2;
+Every object should have a name and that will be uniqe.
+Object is a real world entity. It is an instance of a class.
+Object creation example:-
+classname objectname = new class-constructor();
+Abc obj1 = new Abc();
+
+Anonymous Object:- When you dont have the reference this type of object called as anonymous object. When you want to use object only once then always go for anonymous object. And when you want to use the object multiple times then always use the reference object.
+After declaring the object we can define method or methods inside a block and after that we can call those methods with that object.
+It will not use any memory inside stack memory.
+E.g. new A().show();
+
+G) Constructor:-
+There are two types of constructors in Java. The java compiler creates a default constructor implicitly if there is no constructor in the class. 
+Constructor will be call or executed for all the objects or whenever you create an object.
+If there are any non static blocks then all the statements are executed before the constructor. That means all the statements which are declared in 
+constructor will get executed later. 
+To initialize a value for non static variables we can declare in constructor. Every constructor of any class will have a super() method which is hidden. 
+If one class extends another class then the constructor of that class will call the default constructor of super class. 
+If we declare same variable in super and sub class and the sub class extends the super class and if you want to print a value of a variable declared in super class you need to use super keyword. For e.g. (super.i). 
+To call a method which is declared in a super class we can use super keyword in the sub class. For e.g. super.abc();
+Constructor deals with only instance/reference variables.
+Constructor should have a same name as class name.
+A constructor can not have a return type (like void).
+Constructor will not execute if there is no object.
+Constructor can be used to allocate a memory to objects and to initialize the objects.
+We do not have to call constructor anywhere manually it will get call automatically through the objects whenever objects gets created.
+Default Constructor: default constructor is the one which does not accept any value. Compiler will create a default constructor.
+Parameterized Constructor: The parameterized constructor is the one which can initialize the instance variables with the given values. 
+In other words, we can say that the constructors which can accept the arguments are called parameterized constructors. 
+To call a parameterized constructor of a super call we need to pass a parameter for the constructor in sub class.
+Constructor Overloading:- It means that we can have multiple constructors in a single class with same name but with different parameters. 
+We can not have same constructor with same parameters.
+We can call constructor by below ways:-
+1) ClassDemo obj = new ClassDemo(); [By creating an object of a class]
+2) new ClassDemo();
+3) this(); [Using this we can call the default constructor from parameterized constructor.]
+We can call a constructor through an method or by static method. 
+Below are the examples:-
+A) If a method is static we can call default constructor with below:-
+Default constructor should be defined and body declared.
+Inside a method add line new Test_Constructor(); [Test_Constructor() is the default user declared constructor with body.]
+Test_Constructor.printConstructor(); [classname followed by method name]
+B) If a method is not static we can call parameterized constructor with below:-
+Parameterized constructor should be defined and body declared.
+Just define and declare a method.
+new Test_Constructor(1).printConstructor1(); [classname with parameter followed by method name]
+C) If a method is not static we can call constructor with below:-
+new A().showMyDataFromLastYearDatabase(); new keyword constructor name and method name
+In Java every constructor have a super(); method which is hidden by default.
+
+Lambda Expressions. It is introduced in Java 1.8.
+It works only with the functional interface which having only one method inside that interface.
+It is a anonymous method which is an implementation of an method interface.
+It work only with abstract methods.
+
+instance initializer block or normal block will execute 1st before the constructor and it will be executed at the time of object creation.
+We can declare instance initializer block anywhere in the class and it will execute in order it has declared.
+
+Super Keyword:-
+Super keyword can be used with variable,constructor and method.
+To use super one class should exend another class.
+To print a value of varible of super class from sub class we can use below statement:- 
+	System.out.println("Value of variable i of SuperDemo1 Class is:- " +super.i);
+To call a method of super class from sub class method we can use statement:- super.mOne();
+To call a default constructoer of super class from sub class default constructor we can use statement:- super();
+To call a parameterized constructoer of super class from sub class parameterized constructor we can use statement:- super(a);
+
+Static Keyword:-
+If we do not want a variable object specific in that case we can declare that variable as static. 
+Value for all the object to the static declared variable will be same. 
+If the value of a static variable is same for all the object then we do not need to call the variable with a object. 
+In this case we can call a static variable with class name. Static variables shared memory and its value with all the object.
+For non static variables we can not use class name. 
+We can call a static method with an object but we can access a static variable or static method we dont need an object. 
+We can create a static block as well and this block will get automatically called only once when you load the class. 
+Static block will always be executed 1st before the constructor and there is no matter of sequence how you declare it.
+Static class variables can be iniatilized inside a static block.
+In case if we have multiple static block it will load or execute by the way in sequence you define it or it will execute top to bottom.
+You can not access a non static variable inside a static block or static method and even if you want to use that variable inside a static method then we should have to define static word before that variable.
+Static variable can be used with class level and we can not use it with local variable.
+Static keyword can be used with inner class but we can not use with outer class.
+Static variables can be used in static block/static method/non static block/non static method and in constructor.
+Non static variables can not be used in static block and static method.
+We can call static methods of an interface with interfaceName.staticMethodName();
+
+Arrays:-
+Java array is an object which contains elements of a similar data type. 
+Every value in a array has a uniq number called as index number and index numbers always starts with zero. 
+We can define a value for any index within an array at multiple times.
+There is size limit in array that means we can store only the fixed size of elements in the array. 
+At runtime we can not extend size of an array.
+Arrays are stored in heap memory.
+Array is faster than collection.
+Length of array is fixed and it should be assigned at the time of creation of array.
+Default value for the integer array will be zero and the default values for string array will be null.
+There are 3 types of arrays:-
+1) One dimentional array
+E.g. int nums[] = new int[4]; //Declaration of an array with it's size
+int nums[] = {1,2,3,4,5}; //Declaration and initialization of an array
+char[] s1 = new char[]{'a','b','c'}; //Declaration and initialization of an array
+2) Two dimentional array with same size.
+E.g. int nums[][] = new int[3][3]; Or int nums[][] = {{1,2,3},{4,5,6},{7,8,9}}
+3) Jagged array with different size.
+import java.util.Arrays; Need to import arrays package
+Sort Array in Ascending Order :- Arrays.sort(array); //Here array is the name of an array.
+Sort Array in Descending Order :- Arrays.sort(array, Collections.reverseOrder()); //Here array is the name of an array.
+To find out smallest and largest number from an array we can use first element as small/large 
+and compare it with all other elements of the array by using a single for loop to traverse the array.
+
+Polymorphism:-
+1) CompileTime Polymorphism (Compiler will play the role method overloading) 
+public void add(int a,int b){}
+public void add(float a,int b){}
+public void add(int a,float b){}
+2) Runtime Polymorphism (JVM will play the role method overriding)
+Based on the object of a class(parent/child) it will call the method.
+public void display(){System.out.println("Parent");} //Parent class display method
+public void display(){System.out.println("Child");} //Child class display method
+
+Encapsulation:-
+Variables should be private that means it can only be accessed within a class.
+The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. 
+Whenever you have the objects and to set the value for a variable you should use methods or in short we can declare a value of a variable with the help of method.
+Getters and Setters
+The get method returns the variable value, and the set method sets the value for the private variables which are declared in class.
+Binding data or variables with methods. Variables should be private.
+
+Inheritance:-
+It is possible to inherit attributes and methods from one class to another.
+subclass (also known as child or derived) - the class that inherits from another class
+superclass (also known as parent or base) - the class being inherited from
+To inherit from a class, use the extends keyword to inherit the properties of a class.
+Static method will not participate in inheritance, so overriding here is not possible.
+Final class and final variables will not participate in inheritance.
+Private variables and private method will not participate in inheritance.
+
+Exception Handling:-
+Types of Exception:-
+1) Opening file / file does not exists.
+2) User Input
+3) Divide by 0
+Try and Catch block.
+Exception is a superclass of all the exceptions. 
+We can have multiple catch with one try.
+Always write the main exception last after all the exceptions because main exception will handle all the exceptions so even if you declare other exceptions it will not work since the main exception is declared at the begining.
+Throwable class is the main class for exception. 
+Exception is something that we can handle. Try with resources. Errors which we can not handle.
+Always write main exception as a last catch. Because main exception will handle all the exceptions.
+We can handle exceptions by 5 keywords:- try catch finally throw throws
+If we do not know the name of the class then we can use exception with catch block. E.g. catch (Exception ex){}
+If there is exception in try block then it will not execute the code which are there in try block after the exception.
+If there is no exception found in try block then it will not jump to catch block that means catch block will only execute it there is an exception.
+Inside try/catch block we can have another try/catch block.
+If we do not handle exceptions then program will get abnormally terminate.
+
+There are two type of exceptions:-
+A) Checked (Compile time exceptions)
+1] IOException
+2] SQLException
+B) Unchecked
+1] RuntimeException
+2] ArithmeticException
+
+Unchecked Exceptions:- (Run time exceptions)
+1) NullPointerException
+2) ArithmeticException
+3) IllegalArgumentException
+4) IndexOutOfBoundsException
+5) IllegalStateException
+
+Error Exceptions:-
+Errors are occured because of the lack of system resources.
+We as a programmer can not handle errors.
+Errors are only one type:- 1) Unchecked Exceptions:- (Run time exceptions)
+1) Stackoverflow
+2) Out of Memory
+
+Exceptions Hierarchy:-
+Throwable:- is the parent class of Exception class and Error class.
+Exception Class		Error Class
+RuntimeException
+
+Exception class is parent/super class of all checked and unchecked exceptions.
+Exceptions can handle.
+There are two types of exceptions:- 1) Checked (Compile time exceptions) and 2) Unchecked Exceptions:- (Run time exceptions)
+
+Throw Keyword:-
+We can not write any statements after throw statement. Even though if we write it will not get execute.
+throw keyword is used to create an exception object which it will pass to JVM and JVM will pass it to the default exception handler.
+It will not handle that exception.
+
+Methods to print exceptions message:-
+e.printStackTrace();
+System.out.println(e);
+System.out.println(e.toString());
+System.out.println(e.getMessage());
+
+Final Keyword:-
+It can be used with class, method and variables.
+Final keyword is used to stop value change for variable, stop method overriding, stop class inheritance.
+If you declare an variable with final keyword then that variable will be constant or static. You can not change the value later in the code. 
+If we do not assigned a value to a variable with final keyword at the starting and after you assigned the value to that variable then the value declared last that will become final value. 
+If we declared any method with final keyword we can not override the same method again in any other class.
+If you declared any class with final keyword then no other class can extend that class anywhere again.
+If we do not want to inherit one class to another class then in that case we can use the final keyword with class. 
+This means if we declare any class with final keyword then other class can not extend this class.
+
+Keyword finally or finally block:-
+Finally block we can use with either try or try-catch block. We can not use finally block without try/catch block.
+We can use only one finally block with one try block.
+Finally block will always gets executed where exception handled or not.
+If we use System.exit() in try block then finally block will not get executed.
+If there is an error occured in try block then finally block will not get executed.
+There can be possibility of exception can occur in the finally block.
+We can have try/catch block inside finally block.
+We can use the to execute some statements even in case code is not able to handle or code is working fine.
+We can use finally block to close any opened resources. Like File is used to read which need to be close.
+We can use the clean up code in finally block. E.g. To close any opened file or to close any opened database connection.
+For E.g. try {} finally {} or try {} catch {} finally {}
+
+Finalize Method:-
+Method is override for an object.
+If any object is going to be delete then to close any resource related to that object we can write the code in finalize.
+It will execute prior before garbage collection.
+Syntax:- protected void finalize() throws throwable {}
+
+Whenever we want to take a input from user we can use BufferedReader or Scanner object.
+
+Wrapper Class:-
+Wrapper class is used with collection, framework or advanced framework.
+The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive.
+Taking an variable and declaring a value to that variable and passing that variable to an object is called as wrapping. 
+So in this case the value which is assigned to a variable will be stored inside the object or we can say that the same vaiable value will be used for an object.
+E.g.:- int i=5; Integer iobj = new Integer(i);
+unwrapping:-
+Taking out that variable from an object is called unwrapping. 
+E.g.:- int i=5; Integer iobj = new Integer(i); int j = iobj.intValue();
+Boxing or wrapping:- when you put a primitive value or a variable value inside an object it will call as boxing or wrapping.
+Primitive works faster than wrapper class.
+
+parseInt is a method we can use to convert a string into integer. parseInt() is the static method of Integer class.
+
+This keyword:-
+If a variable of a same name is declared in constructor and method then if we want to print the value of instance(class) variable or local(method) variable then we can use this keyword.
+E.g.:- this.x=x; (Print value of a local(method) variable) AND x=this.x; (Print value of a instance(class) variable)
+
+Collection:-
+Collection is an api/framework.
+Collection is a interface and C start with capital here and Collections is a class.
+It do not support index number. List works with index number.
+To sort the values with ascending order we can use Collection.sort(values); (Here values is the object).
+To sort the values with descending order we can use Collection.reverse(values);
+To shuffle the values we can use Collection.shuffle(values);
+Array is fast compare to collection.
+If the size of the array is not fixed then we can go with collection. 
+Collection provides us a dynamic array.
+Collection maintain the sequence of the values with insertion at position.
+We can print the values of Collection through iterator and through enhanced for loop.
+In collection we can add any datatype values. 
+For E.g. Collection<Integer> values = new ArrayList<Integer>();
+For E.g. Collection<Integer> values = new ArrayList<>();
+By default in collection datatype will be an object.
+
+Generics:-
+Whenever you work with generics it is compulsory to use class.
+We can use angular brackets <> with generics.
+It only supports wrapper classes or reference types.
+It do not support with primitive data types it supports with reference data types.
+Arrays do not support Generics creation.
+
+ArrayList:-
+ArrayList is not fixed, it can grow and shrink dynamically. It can grow 50% of its size.
+ArrayList will save the memory compare to Vector. ArrayList is fast compare to Vector.
+In ArrayList elements can be inserted at or deleted from a particular position.
+ArrayList can hold multiple null and duplicate elements.
+ArrayList is a class which implements collection indirectly.
+ArrayList implements List which is interface and List extends Collection interface. ArrayList->List->Collection
+ArrayList is not thread safe.
+
+Collections.reverse(values); :- To print the elements of an arraylist in reverse order.
+E.g. 
+1) List<Integer> values = Arrays.asList(10,20,30);
+2) List<Integer> values = new ArrayList<Integer>()
+{{
+	add(10);
+	add(20);
+	add(30);
+}}
+3) List<Integer> values = new ArrayList<Integer>();
+		values.add(10);
+		values.add(20);
+		values.add(30);
+		values.remove(0); //remove value at this index number
+		values.toArray()
+		values.clear(); //it will remove all the elements of the array.
+		values.contains(20); //it will return boolean value true or false
+		values.get(1); //value of this index number 
+		values.isEmpty(); //it will return boolean value true or false
+		values.indexOf(20); //it will retrun a first index of this element value
+		values.lastIndexOf(20); //it will retrun a last index of this element value
+		values.size(); //display size/legnth of the array.
+		values.set(0,10); //replace or set value of elment to 10 for the 0 index
+		values.subList(0,3); //display values of the array index at 0/1 and 2
+4) ArrayList<String> sList = new ArrayList<String>();
+
+LinkedList is faster than ArrayList. 
+To search value of any element in LinkedList will be slow compared to ArrayList.
+1st element in linkedlist will be head and last element will be tail.
+We can call elements as node and every node will have an address of the next node and value.
+All the values in the list will be linked with each other.
+Last node in the list will always be having null address.
+With linkedlist we can add any value at start,middle and at the end.
+LinkedList class can contain duplicate elements.
+
+Example of LinkedList:-
+llist.add("Hi"); llist is the object here.
+llist.add(1,"Element"); Using Add method at specific index
+llist.addAll(collection); Again collection is object here. using method addAll()
+llist.addAll(3,collection); Again collection is object here. using method addAll() at index 3
+llist.addFirst("First"); add a new element at first position
+llist.addLast("Last"); add a new element at last position
+llist.clear(); llist is the object here. clear the list
+llist2 = (LinkedList) llist1.clone(); llist1 and llist2 are the object here. clone llist1
+System.out.println("List contains 'java':" + llist.contains("java")); check if the list contains java
+System.out.println("Element at index 3 :" + llist.get(2)); print element at index 2
+System.out.println("First Element :" + llist.getFirst()); print the first element using getFirst() method
+System.out.println("Last Element :" + llist.getLast()); print the last element using getFirst() method
+System.out.println("Element to be removed:" + llist.remove(3)); remove the element at index 3
+System.out.println("Hi is in the list:" + llist.remove("Hi")); remove of "Hi"
+System.out.println("First element:" + llist.removeFirst()); remove the first or head element
+System.out.println("Last element:" + llist.removeLast()); remove the last element
+System.out.println("Object to be replaced:" + llist.set(3, "Android")); set "Android" at index 3
+System.out.println("linked List size:" + llist.size()); print the size of the linked list
+
+Iterator Interface:-
+We can use iterator to fetch the values from collection.
+Interface start with capital I Iterator.
+Method start with small i iterator.
+Iterator i = values.iterator();
+system.out.println(i.next());
+
+List Interface:-
+List extends Collection class.
+In list interface we can use all datatypes of values like integer,float,string.
+If we want to use only particular datatype then you can declare it with List keyword. For E.g. List<Interger>
+List is by default mutable.
+In List we can have a duplicate value.
+We can use List interface to sort the values with index. List works with index number.
+List interface is implemented by the classes ArrayList, LinkedList, Vector, and Stack.
+To instantiate the List interface, we must use:-
+    List <data-type> list1= new ArrayList();  
+    List <data-type> list2 = new LinkedList();  
+    List <data-type> list3 = new Vector();  
+    List <data-type> list4 = new Stack();  
+
+Set Interface:-
+set extends collection.
+set only supports unique elements. 
+You can not add duplicate elements in set and even though if you added then it will print the duplicate element only once.
+For E.g. Set<Integer> numbers = new HashSet<>(); HashSet is a class here and it will not give you the values in sequence or in sorted format.
+For E.g. Set<Integer> numbers = new TreeSet<>(); With TreeSet class we can get the all the number elements in sequence or in sorted format.
+To print a boolean value:- system.out.println(values.add(5)); Here add is an inbuilt method which retrun boolean value. If will print false value if the element is duplicate.
+
+HashSet:-
+HashSet class implements Set Interface. 
+It contains unique items only.
+It will allow null values.
+
+Map Interface:-
+Map will take two values i.e. key and value.
+Map will not have a number map will have a key. Key can be a number or string or it can be any value. 
+For every value will have a key.
+We have two classes which implements Map interface one is HashMap and second is Hashtable.
+If there is no value for the key then it will give null as a value.
+For E.g. Map<String,String> map = new HashMap<>();
+Entry is interface inside map interface.
+map.put("myname","Sandeep");
+system.out.println(map.get("myname"));
+
+HashMap Class:-
+It implements Map interface.
+It contains only unique keys.
+It may have one null key and multiple null values.
+It do not maintains order.
+
+Vector class:-
+Vector class implements List interface and List interface implements Collection interface.
+Vector is an dynamic array in which you can increase size of an array. It will grow 100% of its size.
+By default the size or capacity of the vector is 10 and it increases the value as per the user requirement automatically.
+Vector will waste lots of memory.
+Every methods in vector is synchronized and it is thread safe.
+Vector is slow compare with ArrayList.
+We can have a duplicate values inside a vector.
+By default Vector will not sort the elements and it will print the elements as its position.
+To sort a vector we can use Collections.sort(v);
+Vector have index.
+For E.g. Vector v = new Vector(); By default type is object but we can specify the specific type as well.
+system.out.println(v.capacity());
+v.add(value);
+v.remove(index number);
+
+Comparator interface:-
+
+Comparable interface:-
+In this we have inbuilt compareTo() method.
+
+Packages:-
+When we putting all the classes in a folder that folder is called as package.
+
+Enum Class:- 
+We can define enum inside or outside a class but we can not define enum inside a method.
+In enum we can declare the constants.
+In Java every eum gets converted into class.
+We can create variables,constructors and methods inside enum.
+Enum can implement the interface but enum can not extend any other class.
+Every enum in java extends a class Enum.
+Enum class is an abstract class.
+
+Annotations:-
+Annotation is an interface.
+@Override we can use this before the method when we want to declare method with the same name which are having large names in two different class. With this it can help us at the time of method name declaration in between two or more methods.
+With the help of @Override key we can get to know that whether we are overriding an method or not.
+@Deprecated we can use this word before declaring the method.
+@FunctionalInterface if we declare this keyword before any interface so inside that interface at a time we can declare only one method and it will not allow no other methods inside the same interface.
+We can use annotations on class, methods, variables and on interface as well.
+There are four types of annotations:-
+1) Marker Annotation:- where there is no value inside the annotation.
+2) Single Value Annotation:- This will have a single value inside the annotation.
+3) Multi Value Annotation:- Here we can have multi values inside the annotation.
+4) Meta Annotation
+
+Multithreading:-
+Multithreading is more important when you create software,app or game development.
+In Java by default main is a thread. We can use web application by using multithreading. 
+Every time you extends Thread your class becomes a thread. 
+Run is a internal method of class thread. 
+If you are using runnable interface then we need to create objects of a Thread class and we can pass the objects of a local class to this objects.
+With the help of isAlive method we can check if the method is dead or alive.
+Thread is an inbuilt class in java.
+Whenever you call to a start method internally thread executes a method.
+To set the thread name through an object:-  t1.setName("MYTestThread");
+To print the thread name through an object:- t1.getName();
+To print the thread name:- System.out.println(Thread.currentThread().getName());
+Default priority of a thread is 5 (NORM_PRIORITY). The value of MIN_PRIORITY is 1 and the value of MAX_PRIORITY is 10.
+To set minimum priority of a thread through an object:- m1.setPriority(Thread.MIN_PRIORITY);  
+To set maximum priority of a thread through an object:- m2.setPriority(Thread.MAX_PRIORITY);
+To set a thread as a daemon thread:- t1.setDaemon(true);
+To check if a thread is a daemon thread:- System.out.println("Daemon: "+Thread.currentThread().isDaemon()); 
+
+Thread:-
+The sleep() method of Thread class is used to sleep a thread for the specified amount of time.
+The Thread class provides methods to change and get the name of a thread. By default, each thread has a name i.e. thread-0, thread-1 and so on. By we can change the name of the thread by using setName() method.
+
+By default string is immutable and stringbuffer is mutable.
+
+Synchronized:-
+To prevent multiple methods to accept the same method or to call a same(single) method we can use synchronized keyword for this method. 
+With the help of synchronized word only one method of thread will be using same method. 
+In other terms the other method of other thread will not use the same method which is declared.
+
+Java Shell Tool (JShell)
+It is an interactive Java Shell tool, it allows us to execute Java code from the shell and shows output immediately. JShell is a REPL (Read Evaluate Print Loop) tool and run from the command line.
+
+Ternary operator:-
+variable = (condition) ? expressionTrue :  expressionFalse;
+String result = (time < 18) ? "Good day." : "Good evening.";
+
+String:-
+String is a final class.
+String is a non primitive data type that means it is an object/reference type.
+String is immutable. That means once the memory allocated then changes will not happen in the same memory address.
+String do not have a fix size.
+By default String value is null.
+String is a sequence or array of characters.
+String constant pool (SCP) or String literal pool. It will be stored inside heap area.
+String/StringBuffer/StringBuilder using these classes we can create strings.
+StringBuffer/StringBuilder are inbuilt mutable classes. That means changes will happen in the same memory address.
+Garbage collection is not applicable in SCP.
+String index position starts with 0.
+length() ==> returns value in integer.
+isEmpty() ==> returns value in boolean.
+trim() ==> returns value in string.
+equals()/equalsIgnoreCase()==> returns value in boolean.
+compareTo() ==> returns value in integer. We can get the length of a string as well with this method.
+compareToIgnoreCase() ==> returns value in integer.
+We use Double's parseDouble() method to convert the string to a Double. E.g:- Double num = Double.parseDouble(string);
+If we created a object with StringBuffer data type with final as a modifier and assigned some value then that value we can change.
+But we can not change the reference which is pointing with new object with same reference name.
+E.g.:- final StringBuffer sb = new StringBuffer("sandeep");
+       sb.append("dhotre"); //We can change the value of the reference because StringBuffer is mutable in nature.
+       sb=new StringBuffer("abhidnya"); //This will not allowed to create a new object with same reference name.
+Default capacity for StringBuffer is 16. We can sepcify the capacity while creating an object.
+E.g. StringBuffer sb = new StringBuffer(19); //Here the 19 number is the capacity.
